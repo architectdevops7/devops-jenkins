@@ -1,3 +1,7 @@
 This is the changes done D6
 this is new changes from different developer
+<<<<<<< HEAD
 this line is added by child2 branch
+=======
+This line is added by child1 branch
+>>>>>>> eacbe0f (chnages done in child1 branch)
