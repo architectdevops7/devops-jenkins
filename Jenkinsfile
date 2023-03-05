@@ -25,6 +25,8 @@ pipeline {
 //         sshagent(['maven-deploy']) {
 //           sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/$JOB_NAME/target/*.war ec2-user@54.237.24.49:/opt/apache-tomcat-9.0.72/webapps"
 //         }
+           deploy adapters: [tomcat9(credentialsId: 'tomcat-user', path: '', url: 'http://107.23.147.188:8080/')], contextPath: null, war: '**/*.war'
+        }
       }
     }
   }
