@@ -22,19 +22,10 @@ pipeline {
     }
     stage("tomcat deploy code"){
       steps{
-        sshagent(['maven-deploy']) {
-          sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/$JOB_NAME/target/*.war ec2-user@54.237.24.49:/opt/apache-tomcat-9.0.72/webapps"
-        }
+//         sshagent(['maven-deploy']) {
+//           sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/$JOB_NAME/target/*.war ec2-user@54.237.24.49:/opt/apache-tomcat-9.0.72/webapps"
+//         }
       }
     }
   }
 }
-
-
-Dockerfile
-
-FROM tomcat:9.0
-ADD ./traget/*.war /usr/local/tomcat/webapps/
-EXPOSE 8080
-WORKDIR /usr/local/tomcat/webapps/
-CMD ["startup.sh", "run"]
