@@ -9,6 +9,7 @@
     <input type="checkbox" name="author" value="DevOps">Automation
     <input type="checkbox" name="author" value="Docker & Kubernetes">Containers
     <input type="checkbox" name="author" value="Kafka & Airflow">BigData
+    <input type="checkbox" name="author" value="Python & Bash">Scripting
     <input type="submit" value="Query">
   </form>
 
