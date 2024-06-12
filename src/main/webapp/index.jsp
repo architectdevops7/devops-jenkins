@@ -6,6 +6,7 @@
   <h3>Choose the technology that you like:</h3>
   <form method="get">
     <input type="checkbox" name="author" value="Amazon Web Services">Cloud
+    <input type="checkbox" name="author" value="Google Cloud Platform">Cloud
     <input type="checkbox" name="author" value="DevOps">Automation
     <input type="checkbox" name="author" value="Docker & Kubernetes">Containers
     <input type="checkbox" name="author" value="Kafka & Airflow">BigData
