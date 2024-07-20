@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging to AWS ECR registry
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/b6s4k0k9/javaapp
+      - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/b6s4k0k9/javaapp
   build:
     commands:
       - echo Build the image
