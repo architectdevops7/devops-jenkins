@@ -24,9 +24,9 @@ RUN cp -Rv /tmp/apache-tomcat-9.0.73/* /opt/tomcat/
 RUN cp target/*.war /opt/tomcat/webapps/
 #COPY --from=0 /app/target/*.war /opt/tomcat/webapps/
 # Copy Tomcat config files
-COPY conf/tomcat-users.xml /opt/tomcat/conf/
-COPY conf/context.xml /opt/tomcat/webapps/manager/META-INF/
-COPY conf/context.xml /opt/tomcat/webapps/host-manager/META-INF/
+# COPY conf/tomcat-users.xml /opt/tomcat/conf/
+# COPY conf/context.xml /opt/tomcat/webapps/manager/META-INF/
+# COPY conf/context.xml /opt/tomcat/webapps/host-manager/META-INF/
 
 # Expose port 8080
 EXPOSE 8080
